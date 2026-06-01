@@ -1,0 +1,370 @@
+/* Importa a fonte Roboto do Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+/* ===== BASE ===== */
+
+/* Estiliza o corpo da página */
+body {
+  background: #ffffff; /* Define fundo branco */
+  height: 100%; /* Ocupa toda a altura da tela */
+  font-family: "Roboto", sans-serif; /* Define a fonte do site */
+}
+
+/* Define altura total para o HTML */
+html {
+  height: 100%;
+}
+
+/* ===== CARROSSEL ===== */
+
+/* Container principal do carrossel */
+div#carousel {
+  height: 800px; /* Altura baseada na tela (viewport height) */
+  width: 100%; /* Ocupa toda a largura */
+  max-height: 900px; /* Limite máximo de altura */
+  display: flex; /* Usa flexbox */
+  justify-content: center; /* Centraliza horizontalmente */
+  align-items: center; /* Centraliza verticalmente */
+  position: relative; /* Permite posicionamento absoluto interno */
+  overflow: hidden; /* Esconde partes que saem do container */
+
+  transition: all 0.5s ease-in-out; /* Anima mudanças suavemente */
+}
+
+/* Imagens dentro do carrossel */
+#carousel img {
+  max-width: 100%; /* Não ultrapassa largura do container */
+  max-height: 100%; /* Não ultrapassa altura do container */
+  object-fit: contain; /* Mantém proporção da imagem */
+}
+
+/* ===== TÍTULO DO CARROSSEL ===== */
+
+/* Link do título */
+div#carousel-title a {
+  text-decoration: none; /* Remove sublinhado */
+  color: #1351d8; /* Cor azul */
+}
+
+/* Container do título */
+div#carousel-title {
+  display: block; /* Ocupa linha inteira */
+  text-align: center; /* Centraliza texto */
+  margin: 10px 0; /* Espaçamento vertical */
+  font-weight: bold; /* Texto em negrito */
+}
+
+/* ===== SETAS DO CARROSSEL ===== */
+
+/* Estilo base das setas */
+.arrow {
+  position: absolute; /* Fixa dentro do carrossel */
+  top: 50%; /* Centraliza verticalmente */
+  transform: translateY(-50%); /* Ajuste fino de centralização */
+  font-size: 35px; /* Tamanho da seta */
+  background: rgba(0, 0, 0, 0.4); /* Fundo semi-transparente */
+  color: white; /* Cor da seta */
+  border: none; /* Remove borda */
+  cursor: pointer; /* Cursor de clique */
+  padding: 10px; /* Espaçamento interno */
+  border-radius: 50%; /* Forma circular */
+}
+
+/* Seta da esquerda */
+.left {
+  left: 240px; /* Distância da esquerda */
+}
+
+/* Seta da direita */
+.right {
+  right: 240px; /* Distância da direita */
+}
+
+/* Efeito ao passar o mouse */
+.arrow:hover {
+  background: rgba(0, 0, 0, 0.7); /* Fundo mais escuro */
+}
+
+/* ===== HEADER ===== */
+
+/* Lista dentro do header */
+header ul {
+  text-align: center; /* Centraliza conteúdo */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+/* Listas gerais */
+ul {
+  display: inline-block; /* Permite centralizar */
+}
+
+/* Estilo do header */
+header {
+  background: #ffffff; /* Fundo branco */
+  border-bottom: 1px solid #ccc; /* Linha inferior */
+  margin-bottom: 10px; /* Espaço abaixo */
+  padding: 10px; /* Espaçamento interno */
+}
+
+/* Divs dentro do header */
+header div {
+  display: inline; /* Ficam lado a lado */
+  vertical-align: middle; /* Alinhamento vertical */
+}
+
+/* Navegação */
+header nav {
+  display: inline-block;
+  vertical-align: middle;
+  width: 80vw; /* 80% da largura da tela */
+}
+
+/* Links do menu */
+header nav a {
+  color: #1351d8;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 900;
+  margin: 0 14px;
+}
+
+/* Hover nos links */
+header nav a:hover {
+  color: #1b357e; /* Cor mais escura */
+}
+
+/* ===== MENU ===== */
+
+/* Itens do menu */
+nav li {
+  display: inline; /* Ficam em linha */
+  list-style: none; /* Remove bolinhas */
+}
+
+/* ===== MAIN ===== */
+
+/* Conteúdo principal */
+main {
+  min-height: calc(100% - 167px); /* Altura mínima calculada */
+}
+
+/* ===== SOCIAL ===== */
+
+/* Área de redes sociais */
+nav#social {
+  display: inline;
+  width: 80%;
+}
+
+/* Imagens das redes sociais */
+nav#social ul img {
+  width: 28px; /* Tamanho dos ícones */
+}
+
+/* Texto das redes */
+span.redesociais {
+  color: #ffffff;
+  vertical-align: super;
+}
+
+/* ===== FOOTER ===== */
+
+/* Rodapé */
+footer {
+  background: #1b357e; /* Fundo azul escuro */
+  padding: 20px;
+}
+
+/* Divs do rodapé */
+footer div {
+  display: inline;
+  float: right; /* Alinha à direita */
+  margin-right: 40px;
+}
+
+/* ===== BOTÕES ===== */
+
+/* Botão padrão */
+button {
+  background: #1351d8;
+  color: #fff;
+  border: 0px;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
+/* Hover do botão */
+button:hover {
+  background: #1b357e;
+}
+
+/* ===== CARDS (CARROS) ===== */
+
+/* Cartões de carros */
+.card {
+  display: inline-block; /* Ficam lado a lado */
+  width: 250px;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Sombra */
+  vertical-align: top;
+}
+
+/* Imagem dentro do card */
+.card img {
+  width: 100%; /* Ocupa toda largura do card */
+}
+
+/* Título do card */
+.card h3 {
+  margin: 10px 0;
+}
+
+/* ===== MODAL COMPARAÇÃO ===== */
+
+/* Fundo do modal */
+#compare {
+  position: fixed; /* Fica fixo na tela */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0, 0, 0, 0.8); /* Fundo escuro */
+  display: none; /* Começa escondido */
+
+  padding: 40px;
+  overflow: auto; /* Scroll se necessário */
+}
+
+/* Tabela do modal */
+#compare table {
+  width: 100%;
+  background: white;
+  border-collapse: collapse; /* Remove espaços entre bordas */
+}
+
+/* Células da tabela */
+#compare th,
+#compare td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Imagens do modal */
+#compare img {
+  width: 120px;
+}
+
+/* Botão fechar */
+.close-btn {
+  float: right;
+  margin-bottom: 10px;
+}
+
+/* ===== FORMULÁRIO ===== */
+
+/* Formulário */
+form {
+  max-width: 500px;
+  margin: auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+/* Campos do formulário */
+form input,
+form select,
+form textarea {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+/* Efeito no botão do formulário */
+form button {
+  transition: 0.3s; /* Animação suave */
+}
+
+/* Hover do botão */
+form button:hover {
+  transform: scale(1.05); /* Aumenta levemente */
+}
+
+/* ===== RESPONSIVO ===== */
+
+/* Para telas menores (celular/tablet) */
+@media (max-width: 768px) {
+  header nav {
+    width: 100%;
+    text-align: center;
+  }
+
+  .card {
+    width: 90%; /* Cards ocupam mais espaço */
+  }
+
+  #carousel {
+    height: 250px; /* Reduz altura */
+  }
+
+  .arrow {
+    font-size: 25px; /* Setas menores */
+  }
+}
+
+/* Container para alinhar o checkbox e o texto lado a lado */
+.checkbox-container {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin: 1px 1px; /* ↓ menor espaço entre eles */
+  width: 100%;
+}
+
+/* Força o checkbox a ter o tamanho normal e não ocupar 100% da largura */
+.checkbox-container input[type="checkbox"] {
+  width: auto;
+  margin: 0 8px 0 0; /* Espaço apenas à direita do quadradinho */
+  cursor: pointer;
+}
+
+/* Estilização do texto ao lado do checkbox */
+.checkbox-container label {
+  font-size: 14px;
+  cursor: pointer;
+  user-select: none; /* Impede seleção acidental do texto ao clicar */
+}
+
+/* Container do botão para garantir que o float: right funcione isolado */
+.btn-container {
+  display: block;
+  width: 100%;
+  clear: both; /* Limpa interferências de outros elementos */
+  padding-top: 15px;
+}
+/* Container do texto informativo */
+.info-dados {
+  display: block; /* Garante que o bloco ocupe uma linha própria */
+  text-align: left; /* Alinha o texto à esquerda */
+  padding: 10px 8px; /* Espaçamento interno */
+  margin-bottom: 5px;
+  width: 100%; /* Ocupa a largura interna do formulário */
+}
+
+/* Estilo para as frases informativas */
+.info-dados p {
+  font-size: 13px; /* Tamanho ligeiramente menor para se diferenciar dos campos */
+  color: #666666; /* Um cinza escuro discreto e elegante */
+  margin: 4px 0; /* Espaçamento controlado entre as duas linhas */
+  line-height: 1.4; /* Melhora a leitura */
+}
